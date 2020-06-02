@@ -4,8 +4,14 @@ import ParkingLot.Exception.SpotUnavailableException;
 
 public class Spot {
     private boolean available;
+    private int level;
+    private int row;
+    private int column;
 
-    public Spot(){
+    public Spot(int level,int row,int column){
+        this.level = level;
+        this.row = row;
+        this.column = column;
         this.available = true;
     }
 
@@ -24,6 +30,8 @@ public class Spot {
     public boolean isAvailable(){
         return available;
     }
+
+
 
 
 }
