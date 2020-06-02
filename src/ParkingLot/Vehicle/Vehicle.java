@@ -9,4 +9,8 @@ public class Vehicle {
         }
         this.size = size;
     }
+
+    public int getSize(){
+        return size;
+    }
 }
