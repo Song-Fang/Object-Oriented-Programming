@@ -33,8 +33,9 @@ public class Row {
             if(spots.get(left).isAvailable()){
                 for(int right = left;right<spots.size();right++){
                     if(spots.get(right).isAvailable()) {
-                        if (right - left + 1 >= size) {
+                        if (right - left + 1 == size) {
                             result.add(getSpot(left));
+                            break;
                         } else {
                             continue;
                         }
